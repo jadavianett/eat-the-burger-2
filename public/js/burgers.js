@@ -23,10 +23,12 @@ $(function () {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
     console.log("button was clicked")
+    var test = $("#ca").val().trim();
+    console.log(test);
   
 
     var newBurger = {
-      burger_name: $("#ca").val().trim(),
+      name: $("#ca").val().trim(),
       devoured: $("[name=devoured]:checked").val(),
     };
 
